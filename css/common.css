@@ -22,12 +22,3 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-
-.is-hidden {
-  display: none;
-  color: aquamarine;
-  opacity: 1;
-}
-/* .test {
-  display: none;
-} */
