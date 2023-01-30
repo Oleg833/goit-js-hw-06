@@ -12,3 +12,15 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const list = document.querySelector('ul.gallery');
+
+const newTechnologies = ['React', 'TypeScript', 'Node.js'];
+const markup = images
+  .map(
+    ({ url, alt }) => `<li class="gallery-item"><img src="${url}" alt="${alt}" width="1260"></li>`
+  )
+  .join('');
+
+list.insertAdjacentHTML('beforeend', markup);
+list.insertAdjacentHTML('beforebegin', '<h2>Popular gallery</h2>');

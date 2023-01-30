@@ -15,3 +15,5 @@ console.log(markup);
 //   lastFragment.appendChild(list);
 // }
 // document.querySelector('ul#ingredients').append(lastFragment);
+
+console.log(document.querySelector('ul#ingredients').innerHTML);
