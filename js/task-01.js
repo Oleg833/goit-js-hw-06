@@ -7,4 +7,5 @@ const resultArray = [...itemElements]
     Elements: ${item.children[1].children.length}`
   )
   .join('\n');
+
 console.log(resultArray);
