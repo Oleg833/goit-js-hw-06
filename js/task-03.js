@@ -23,4 +23,3 @@ const markup = images
   .join('');
 
 list.insertAdjacentHTML('beforeend', markup);
-list.insertAdjacentHTML('beforebegin', '<h2>Popular gallery</h2>');
