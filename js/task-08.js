@@ -6,11 +6,16 @@ const onLoginEventCurrentTarget = event => {
     elements: { email, password },
   } = event.currentTarget;
 
-  if (!password.value.trim()) {
+  if (!email.value.trim() || !password.value.trim()) {
     alert('Заповніть всі поля!');
     return;
   }
-  console.log(email.value, password.value);
+  const myForm = {
+    email: email.value,
+    password: password.value,
+  };
+  // console.log(email.value, password.value);
+  console.log(myForm);
   event.currentTarget.reset();
 };
 
