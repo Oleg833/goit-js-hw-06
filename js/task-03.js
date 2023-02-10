@@ -15,11 +15,19 @@ const images = [
 
 const list = document.querySelector('ul.gallery');
 
-const newTechnologies = ['React', 'TypeScript', 'Node.js'];
-const markup = images
-  .map(
-    ({ url, alt }) => `<li class="gallery-item"><img src="${url}" alt="${alt}" width="1260"></li>`
-  )
-  .join('');
+// const markup = images
+//   .map(
+//     ({ url, alt }) => `<li class="gallery-item"><img src="${url}" alt="${alt}" width="1260"></li>`
+//   )
+//   .join('');
+// list.innerHTML = markup;
+// list.insertAdjacentHTML('beforeend', markup);
 
+const markup = images.reduce(
+  (acc, images) =>
+    acc +
+    `<li class="gallery-item"><img src="${images.url}" alt="${images.alt}" width="1260"></li>`,
+  ''
+);
+// list.innerHTML = markup;
 list.insertAdjacentHTML('beforeend', markup);
