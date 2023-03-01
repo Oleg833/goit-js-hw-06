@@ -125,3 +125,5 @@ btnDestroyEl.addEventListener('click', onDestroyBoxes);
 
 // createBrn.addEventListener('click', createBoxes);
 // destroyBrn.addEventListener('click', removeBoxes);
+
+// e.target.nodeName === 'BUTTON' ? cursor.classList.add('hover') : cursor.classList.remove('hover');
